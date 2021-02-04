@@ -7,6 +7,7 @@ function getAverageAge(list) {
   }
   
   let sum = list.reduce(calcSum, 0);
+  let res = sum / list.length;
   
-  return Math.ceil(sum / list.length);
+  return Number(res.toFixed(0));
 }
